@@ -1,0 +1,14 @@
+# Virtual environment
+venv/
+
+# Python caching
+__pycache__/
+*.pyc
+
+# Local SQLite databases
+*.db
+
+# OS / Editor specific
+.DS_Store
+.vscode/
+.idea/
