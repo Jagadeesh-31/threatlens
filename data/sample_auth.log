@@ -1,0 +1,263 @@
+Jul 20 10:54:49 server sshd[10012]: Accepted password for alice from 192.168.1.50 port 57067 ssh2
+Jul 20 10:55:02 server sshd[25270]: Accepted password for alice from 172.16.0.4 port 54942 ssh2
+Jul 20 10:55:12 server sshd[1976]: Accepted password for dev_user from 10.0.0.16 port 33809 ssh2
+Jul 20 10:55:31 server sshd[19390]: Accepted password for sysadmin from 10.0.0.16 port 33637 ssh2
+Jul 20 10:56:17 server sshd[8223]: Accepted password for sysadmin from 172.16.0.4 port 46514 ssh2
+Jul 20 10:56:39 server sshd[25864]: Accepted password for emily from 172.16.0.5 port 32980 ssh2
+Jul 20 10:57:28 server sshd[6094]: Accepted password for charlie from 10.0.0.15 port 41873 ssh2
+Jul 20 10:58:21 server sshd[13449]: Accepted password for alice from 192.168.1.102 port 35807 ssh2
+Jul 20 10:59:20 server sshd[27447]: Accepted password for sysadmin from 192.168.1.102 port 41435 ssh2
+Jul 20 10:59:54 server sshd[3582]: Accepted password for alice from 10.0.0.16 port 45171 ssh2
+Jul 20 11:00:52 server sshd[19918]: Accepted password for sysadmin from 172.16.0.4 port 44618 ssh2
+Jul 20 11:01:01 server sshd[26331]: Accepted password for john from 192.168.1.50 port 40235 ssh2
+Jul 20 11:01:11 server sshd[13455]: Accepted password for bob from 172.16.0.5 port 36077 ssh2
+Jul 20 11:01:56 server sshd[13130]: Accepted password for charlie from 172.16.0.5 port 38097 ssh2
+Jul 20 11:02:43 server sshd[22234]: Accepted password for john from 192.168.1.102 port 55166 ssh2
+Jul 20 11:03:28 server sshd[9021]: Accepted password for sysadmin from 192.168.1.51 port 56660 ssh2
+Jul 20 11:03:57 server sshd[19250]: Accepted password for john from 192.168.1.102 port 55317 ssh2
+Jul 20 11:04:22 server sshd[2832]: Accepted password for emily from 172.16.0.5 port 58195 ssh2
+Jul 20 11:04:29 server sshd[9773]: Accepted password for charlie from 172.16.0.5 port 45913 ssh2
+Jul 20 11:05:10 server sshd[22477]: Accepted password for charlie from 172.16.0.4 port 39735 ssh2
+Jul 20 11:05:56 server sshd[5575]: Accepted password for bob from 10.0.0.15 port 41447 ssh2
+Jul 20 11:06:36 server sshd[20155]: Accepted password for charlie from 10.0.0.16 port 57246 ssh2
+Jul 20 11:07:18 server sshd[5532]: Accepted password for charlie from 10.0.0.15 port 39954 ssh2
+Jul 20 11:07:28 server sshd[4592]: Accepted password for alice from 172.16.0.5 port 60984 ssh2
+Jul 20 11:07:43 server sshd[20543]: Accepted password for john from 172.16.0.5 port 46601 ssh2
+Jul 20 11:08:12 server sshd[9238]: Failed password for dev_user from 10.0.0.16 port 50106 ssh2
+Jul 20 11:08:17 server sshd[23338]: Accepted password for john from 172.16.0.4 port 36521 ssh2
+Jul 20 11:09:10 server sshd[12146]: Accepted password for emily from 192.168.1.102 port 53771 ssh2
+Jul 20 11:09:42 server sshd[24661]: Accepted password for dev_user from 192.168.1.51 port 32874 ssh2
+Jul 20 11:10:03 server sshd[17635]: Accepted password for emily from 10.0.0.16 port 38622 ssh2
+Jul 20 11:11:03 server sshd[21937]: Accepted password for charlie from 172.16.0.4 port 60347 ssh2
+Jul 20 11:11:20 server sshd[6293]: Accepted password for charlie from 192.168.1.51 port 57753 ssh2
+Jul 20 11:12:14 server sshd[11621]: Accepted password for alice from 10.0.0.16 port 52394 ssh2
+Jul 20 11:12:26 server sshd[11076]: Accepted password for emily from 192.168.1.102 port 59204 ssh2
+Jul 20 11:12:46 server sshd[24983]: Accepted password for alice from 10.0.0.16 port 35574 ssh2
+Jul 20 11:12:55 server sshd[5120]: Accepted password for sysadmin from 172.16.0.5 port 57862 ssh2
+Jul 20 11:13:30 server sshd[18290]: Accepted password for bob from 10.0.0.16 port 41453 ssh2
+Jul 20 11:14:02 server sshd[24918]: Accepted password for sysadmin from 192.168.1.51 port 57516 ssh2
+Jul 20 11:14:52 server sshd[22295]: Accepted password for dev_user from 192.168.1.102 port 54777 ssh2
+Jul 20 11:15:30 server sshd[8362]: Accepted password for alice from 10.0.0.15 port 40891 ssh2
+Jul 20 11:15:36 server sshd[20282]: Accepted password for sysadmin from 10.0.0.16 port 40308 ssh2
+Jul 20 11:15:45 server sshd[8501]: Accepted password for john from 172.16.0.4 port 34697 ssh2
+Jul 20 11:15:52 server sshd[17847]: Accepted password for charlie from 172.16.0.5 port 35089 ssh2
+Jul 20 11:16:39 server sshd[5335]: Accepted password for bob from 10.0.0.15 port 50437 ssh2
+Jul 20 11:17:20 server sshd[26710]: Accepted password for dev_user from 10.0.0.16 port 40730 ssh2
+Jul 20 11:17:51 server sshd[22593]: Accepted password for alice from 192.168.1.51 port 35944 ssh2
+Jul 20 11:18:23 server sshd[2775]: Accepted password for dev_user from 10.0.0.15 port 56658 ssh2
+Jul 20 11:19:09 server sshd[24862]: Accepted password for alice from 192.168.1.50 port 45961 ssh2
+Jul 20 11:20:09 server sshd[7232]: Accepted password for bob from 192.168.1.50 port 39046 ssh2
+Jul 20 11:20:22 server sshd[16159]: Accepted password for bob from 10.0.0.15 port 41895 ssh2
+Jul 20 11:20:23 server sshd[27477]: Failed password for root from 198.51.100.42 port 47288 ssh2
+Jul 20 11:20:24 server sshd[22369]: Failed password for root from 198.51.100.42 port 34425 ssh2
+Jul 20 11:20:25 server sshd[25692]: Failed password for root from 198.51.100.42 port 35824 ssh2
+Jul 20 11:20:27 server sshd[16913]: Failed password for root from 198.51.100.42 port 46085 ssh2
+Jul 20 11:20:28 server sshd[16913]: Connection closed by authenticating user root 198.51.100.42 port 46085 [preauth]
+Jul 20 11:20:32 server sshd[6394]: Failed password for root from 198.51.100.42 port 34689 ssh2
+Jul 20 11:20:33 server sshd[6394]: Connection closed by authenticating user root 198.51.100.42 port 34689 [preauth]
+Jul 20 11:20:37 server sshd[26692]: Failed password for root from 198.51.100.42 port 41458 ssh2
+Jul 20 11:20:38 server sshd[26692]: Connection closed by authenticating user root 198.51.100.42 port 41458 [preauth]
+Jul 20 11:20:41 server sshd[23825]: Failed password for root from 198.51.100.42 port 46629 ssh2
+Jul 20 11:20:45 server sshd[7222]: Failed password for root from 198.51.100.42 port 37840 ssh2
+Jul 20 11:20:46 server sshd[7222]: Connection closed by authenticating user root 198.51.100.42 port 37840 [preauth]
+Jul 20 11:20:47 server sshd[25108]: Failed password for root from 198.51.100.42 port 51746 ssh2
+Jul 20 11:20:48 server sshd[25108]: Connection closed by authenticating user root 198.51.100.42 port 51746 [preauth]
+Jul 20 11:20:51 server sshd[2643]: Failed password for root from 198.51.100.42 port 34641 ssh2
+Jul 20 11:20:52 server sshd[2643]: Connection closed by authenticating user root 198.51.100.42 port 34641 [preauth]
+Jul 20 11:20:54 server sshd[17640]: Failed password for root from 198.51.100.42 port 34631 ssh2
+Jul 20 11:20:55 server sshd[17640]: Connection closed by authenticating user root 198.51.100.42 port 34631 [preauth]
+Jul 20 11:20:57 server sshd[20498]: Failed password for root from 198.51.100.42 port 35013 ssh2
+Jul 20 11:20:58 server sshd[20498]: Connection closed by authenticating user root 198.51.100.42 port 35013 [preauth]
+Jul 20 11:21:00 server sshd[4928]: Failed password for root from 198.51.100.42 port 45998 ssh2
+Jul 20 11:21:02 server sshd[20481]: Failed password for root from 198.51.100.42 port 51738 ssh2
+Jul 20 11:21:03 server sshd[20481]: Connection closed by authenticating user root 198.51.100.42 port 51738 [preauth]
+Jul 20 11:21:04 server sshd[22540]: Failed password for root from 198.51.100.42 port 46505 ssh2
+Jul 20 11:21:05 server sshd[22540]: Connection closed by authenticating user root 198.51.100.42 port 46505 [preauth]
+Jul 20 11:21:43 server sshd[22945]: Accepted password for charlie from 192.168.1.102 port 39461 ssh2
+Jul 20 11:22:03 server sshd[23009]: Accepted password for dev_user from 192.168.1.102 port 37056 ssh2
+Jul 20 11:22:37 server sshd[1305]: Accepted password for emily from 192.168.1.102 port 35145 ssh2
+Jul 20 11:23:18 server sshd[7984]: Accepted password for alice from 192.168.1.50 port 50385 ssh2
+Jul 20 11:23:31 server sshd[13108]: Accepted password for alice from 192.168.1.102 port 40772 ssh2
+Jul 20 11:24:04 server sshd[10912]: Accepted password for sysadmin from 172.16.0.5 port 55821 ssh2
+Jul 20 11:25:00 server sshd[22884]: Accepted password for sysadmin from 172.16.0.4 port 33024 ssh2
+Jul 20 11:25:24 server sshd[9666]: Accepted password for alice from 172.16.0.4 port 37168 ssh2
+Jul 20 11:25:35 server sshd[9924]: Accepted password for sysadmin from 172.16.0.4 port 37861 ssh2
+Jul 20 11:25:53 server sshd[23527]: Accepted password for charlie from 172.16.0.4 port 39439 ssh2
+Jul 20 11:26:14 server sshd[28725]: Accepted password for dev_user from 10.0.0.16 port 40996 ssh2
+Jul 20 11:26:59 server sshd[2444]: Accepted password for emily from 10.0.0.15 port 41834 ssh2
+Jul 20 11:27:53 server sshd[6294]: Accepted password for john from 192.168.1.51 port 41351 ssh2
+Jul 20 11:28:33 server sshd[1316]: Accepted password for dev_user from 172.16.0.4 port 51147 ssh2
+Jul 20 11:29:22 server sshd[28348]: Accepted password for sysadmin from 192.168.1.51 port 33948 ssh2
+Jul 20 11:30:02 server sshd[2370]: Accepted password for dev_user from 192.168.1.51 port 36944 ssh2
+Jul 20 11:30:57 server sshd[7883]: Accepted password for alice from 172.16.0.5 port 44492 ssh2
+Jul 20 11:31:44 server sshd[19346]: Accepted password for charlie from 192.168.1.50 port 58330 ssh2
+Jul 20 11:32:15 server sshd[8757]: Accepted password for john from 10.0.0.16 port 37832 ssh2
+Jul 20 11:33:11 server sshd[1812]: Accepted password for bob from 172.16.0.5 port 46278 ssh2
+Jul 20 11:33:37 server sshd[22951]: Accepted password for dev_user from 172.16.0.5 port 59055 ssh2
+Jul 20 11:34:33 server sshd[26800]: Accepted password for charlie from 192.168.1.51 port 37984 ssh2
+Jul 20 11:35:02 server sshd[16423]: Accepted password for alice from 172.16.0.5 port 60902 ssh2
+Jul 20 11:35:59 server sshd[27887]: Accepted password for charlie from 10.0.0.15 port 42768 ssh2
+Jul 20 11:36:18 server sshd[7328]: Accepted password for alice from 192.168.1.51 port 54395 ssh2
+Jul 20 11:36:40 server sshd[10146]: Accepted password for alice from 172.16.0.5 port 58108 ssh2
+Jul 20 11:37:17 server sshd[18570]: Accepted password for john from 10.0.0.15 port 60413 ssh2
+Jul 20 11:37:23 server sshd[20024]: Failed password for charlie from 192.168.1.50 port 38619 ssh2
+Jul 20 11:37:24 server sshd[20024]: Connection closed by authenticating user charlie 192.168.1.50 port 38619 [preauth]
+Jul 20 11:38:07 server sshd[26769]: Accepted password for charlie from 10.0.0.15 port 56640 ssh2
+Jul 20 11:38:50 server sshd[19893]: Accepted password for alice from 10.0.0.16 port 45390 ssh2
+Jul 20 11:38:57 server sshd[18036]: Accepted password for dev_user from 172.16.0.4 port 32823 ssh2
+Jul 20 11:39:36 server sshd[25151]: Accepted password for john from 172.16.0.4 port 57080 ssh2
+Jul 20 11:40:04 server sshd[11819]: Accepted password for alice from 10.0.0.15 port 54533 ssh2
+Jul 20 11:40:51 server sshd[10840]: Accepted password for alice from 172.16.0.5 port 56352 ssh2
+Jul 20 11:41:38 server sshd[23846]: Accepted password for charlie from 10.0.0.15 port 45953 ssh2
+Jul 20 11:41:51 server sshd[13423]: Accepted password for dev_user from 192.168.1.51 port 54556 ssh2
+Jul 20 11:42:07 server sshd[14306]: Accepted password for sysadmin from 10.0.0.16 port 42629 ssh2
+Jul 20 11:42:12 server sshd[15086]: Accepted password for charlie from 192.168.1.102 port 39655 ssh2
+Jul 20 11:42:55 server sshd[15476]: Accepted password for charlie from 172.16.0.4 port 48004 ssh2
+Jul 20 11:43:13 server sshd[27084]: Accepted password for dev_user from 10.0.0.16 port 58777 ssh2
+Jul 20 11:44:00 server sshd[22753]: Accepted password for charlie from 192.168.1.50 port 49658 ssh2
+Jul 20 11:44:26 server sshd[8696]: Accepted password for emily from 192.168.1.50 port 57381 ssh2
+Jul 20 11:44:45 server sshd[1800]: Accepted password for bob from 172.16.0.5 port 37596 ssh2
+Jul 20 11:45:20 server sshd[3386]: Accepted password for emily from 10.0.0.16 port 57949 ssh2
+Jul 20 11:46:05 server sshd[23818]: Accepted password for bob from 10.0.0.16 port 56306 ssh2
+Jul 20 11:46:35 server sshd[23532]: Accepted password for bob from 192.168.1.51 port 54265 ssh2
+Jul 20 11:47:28 server sshd[26507]: Accepted password for emily from 172.16.0.5 port 36260 ssh2
+Jul 20 11:47:44 server sshd[16222]: Accepted password for john from 172.16.0.5 port 49740 ssh2
+Jul 20 11:48:04 server sshd[5369]: Accepted password for alice from 172.16.0.5 port 47725 ssh2
+Jul 20 11:48:51 server sshd[11397]: Accepted password for sysadmin from 10.0.0.16 port 52279 ssh2
+Jul 20 11:49:01 server sudo: pam_unix(sudo:auth): authentication failure; logname=uid=1000 euid=0 tty=/dev/pts/1 ruser=dev_user rhost= user=dev_user
+Jul 20 11:49:02 server sudo:   dev_user : 1 incorrect password attempt ; TTY=pts/1 ; PWD=/home/dev_user ; USER=root ; COMMAND=/usr/bin/apt-get update
+Jul 20 11:49:10 server sudo: pam_unix(sudo:auth): authentication failure; logname=uid=1000 euid=0 tty=/dev/pts/1 ruser=dev_user rhost= user=dev_user
+Jul 20 11:49:11 server sudo:   dev_user : 2 incorrect password attempts ; TTY=pts/1 ; PWD=/home/dev_user ; USER=root ; COMMAND=/usr/bin/apt-get update
+Jul 20 11:49:21 server sudo: pam_unix(sudo:auth): authentication failure; logname=uid=1000 euid=0 tty=/dev/pts/1 ruser=dev_user rhost= user=dev_user
+Jul 20 11:49:22 server sudo:   dev_user : 3 incorrect password attempts ; TTY=pts/1 ; PWD=/home/dev_user ; USER=root ; COMMAND=/usr/bin/apt-get update
+Jul 20 11:49:55 server sshd[16554]: Accepted password for john from 192.168.1.51 port 60997 ssh2
+Jul 20 11:50:48 server sshd[10086]: Accepted password for emily from 192.168.1.51 port 53662 ssh2
+Jul 20 11:51:26 server sshd[9998]: Accepted password for john from 10.0.0.15 port 40607 ssh2
+Jul 20 11:52:16 server sshd[12005]: Accepted password for bob from 192.168.1.102 port 41671 ssh2
+Jul 20 11:52:55 server sshd[8577]: Accepted password for bob from 192.168.1.50 port 37710 ssh2
+Jul 20 11:53:09 server sshd[14594]: Accepted password for bob from 172.16.0.4 port 34872 ssh2
+Jul 20 11:53:48 server sshd[7777]: Accepted password for dev_user from 10.0.0.15 port 34808 ssh2
+Jul 20 11:54:17 server sshd[1640]: Accepted password for sysadmin from 172.16.0.5 port 55558 ssh2
+Jul 20 11:55:10 server sshd[1193]: Accepted password for dev_user from 10.0.0.16 port 48397 ssh2
+Jul 20 11:55:34 server sshd[28385]: Accepted password for dev_user from 172.16.0.5 port 60733 ssh2
+Jul 20 11:56:26 server sshd[20767]: Accepted password for sysadmin from 172.16.0.4 port 58978 ssh2
+Jul 20 11:57:02 server sshd[16913]: Accepted password for charlie from 192.168.1.51 port 47049 ssh2
+Jul 20 11:57:28 server sshd[14248]: Accepted password for john from 172.16.0.4 port 58921 ssh2
+Jul 20 11:58:26 server sshd[18502]: Accepted password for bob from 10.0.0.15 port 53158 ssh2
+Jul 20 11:58:56 server sshd[1888]: Accepted password for sysadmin from 10.0.0.16 port 54493 ssh2
+Jul 20 11:59:28 server sshd[6954]: Accepted password for emily from 192.168.1.51 port 47896 ssh2
+Jul 20 11:59:57 server sshd[11710]: Accepted password for bob from 192.168.1.102 port 47667 ssh2
+Jul 20 12:00:26 server sshd[14813]: Accepted password for emily from 192.168.1.102 port 60028 ssh2
+Jul 20 12:00:36 server sshd[18675]: Accepted password for alice from 10.0.0.15 port 57312 ssh2
+Jul 20 12:01:03 server sshd[26599]: Accepted password for john from 192.168.1.51 port 35016 ssh2
+Jul 20 12:01:10 server sshd[7532]: Accepted password for alice from 172.16.0.5 port 40870 ssh2
+Jul 20 12:01:54 server sshd[16517]: Accepted password for bob from 192.168.1.51 port 36904 ssh2
+Jul 20 12:02:35 server sshd[9396]: Accepted password for dev_user from 192.168.1.51 port 55688 ssh2
+Jul 20 12:02:50 server sshd[24539]: Accepted password for sysadmin from 10.0.0.16 port 57276 ssh2
+Jul 20 12:03:47 server sshd[19962]: Accepted password for charlie from 192.168.1.51 port 36310 ssh2
+Jul 20 12:04:11 server sshd[13997]: Accepted password for john from 10.0.0.16 port 45066 ssh2
+Jul 20 12:04:28 server sshd[28216]: Accepted password for sysadmin from 192.168.1.50 port 55398 ssh2
+Jul 20 12:04:39 server sshd[28862]: Accepted password for emily from 172.16.0.4 port 42650 ssh2
+Jul 20 12:05:35 server sshd[26645]: Accepted password for emily from 192.168.1.50 port 51312 ssh2
+Jul 20 12:06:14 server sshd[3259]: Accepted password for john from 10.0.0.15 port 44910 ssh2
+Jul 20 12:06:40 server sshd[27946]: Accepted password for emily from 192.168.1.50 port 46532 ssh2
+Jul 20 12:07:12 server sshd[16064]: Accepted password for john from 192.168.1.102 port 59923 ssh2
+Jul 20 12:07:44 server sshd[22314]: Accepted password for john from 192.168.1.51 port 49864 ssh2
+Jul 20 12:08:40 server sshd[16232]: Accepted password for emily from 10.0.0.16 port 48611 ssh2
+Jul 20 12:09:31 server sshd[28908]: Accepted password for charlie from 10.0.0.16 port 43329 ssh2
+Jul 20 12:09:41 server sshd[25591]: Accepted password for dev_user from 192.168.1.102 port 40758 ssh2
+Jul 20 12:10:25 server sshd[1940]: Accepted password for dev_user from 172.16.0.4 port 43791 ssh2
+Jul 20 12:10:50 server sshd[12626]: Accepted password for dev_user from 192.168.1.51 port 39718 ssh2
+Jul 20 12:11:16 server sshd[29839]: Accepted password for sysadmin from 192.168.1.102 port 55744 ssh2
+Jul 20 12:11:21 server sshd[8908]: Accepted password for bob from 10.0.0.16 port 35573 ssh2
+Jul 20 12:11:57 server sshd[23629]: Accepted password for emily from 10.0.0.16 port 40642 ssh2
+Jul 20 12:12:47 server sshd[1565]: Accepted password for dev_user from 10.0.0.15 port 58750 ssh2
+Jul 20 12:13:06 server sshd[11033]: Accepted password for john from 10.0.0.15 port 40740 ssh2
+Jul 20 12:13:34 server sshd[12264]: Accepted password for sysadmin from 10.0.0.15 port 50165 ssh2
+Jul 20 12:14:26 server sshd[24031]: Accepted password for charlie from 10.0.0.16 port 44296 ssh2
+Jul 20 12:14:50 server sshd[24635]: Accepted password for bob from 192.168.1.102 port 36721 ssh2
+Jul 20 12:15:02 server sshd[23615]: Accepted password for sysadmin from 172.16.0.4 port 57743 ssh2
+Jul 20 12:15:20 server sshd[24743]: Accepted password for dev_user from 172.16.0.4 port 41828 ssh2
+Jul 20 12:16:13 server sshd[4294]: Accepted password for sysadmin from 10.0.0.16 port 42041 ssh2
+Jul 20 12:16:36 server sshd[10904]: Accepted password for charlie from 192.168.1.51 port 38647 ssh2
+Jul 20 12:16:36 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=18295 PROTO=TCP SPT=41756 DPT=20 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:36 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=13573 PROTO=TCP SPT=50900 DPT=21 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:37 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=55705 PROTO=TCP SPT=36905 DPT=22 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:37 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=59334 PROTO=TCP SPT=48853 DPT=23 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:37 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=10803 PROTO=TCP SPT=51578 DPT=24 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:37 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=40762 PROTO=TCP SPT=48454 DPT=25 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:38 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=32328 PROTO=TCP SPT=38809 DPT=26 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:38 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=26546 PROTO=TCP SPT=48422 DPT=27 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:38 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=14282 PROTO=TCP SPT=45898 DPT=28 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:38 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=14855 PROTO=TCP SPT=51675 DPT=29 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:39 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=54987 PROTO=TCP SPT=34524 DPT=30 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:39 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=19777 PROTO=TCP SPT=59347 DPT=31 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:39 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=29912 PROTO=TCP SPT=35559 DPT=32 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:40 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=17762 PROTO=TCP SPT=51054 DPT=33 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:40 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=37274 PROTO=TCP SPT=52635 DPT=34 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:40 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=50528 PROTO=TCP SPT=40163 DPT=35 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:41 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=44247 PROTO=TCP SPT=45232 DPT=36 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:41 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=39014 PROTO=TCP SPT=42511 DPT=37 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:42 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=38103 PROTO=TCP SPT=42774 DPT=38 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:42 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=50699 PROTO=TCP SPT=34741 DPT=39 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:42 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=58502 PROTO=TCP SPT=36019 DPT=40 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:43 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=23617 PROTO=TCP SPT=53264 DPT=41 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:43 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=27343 PROTO=TCP SPT=54408 DPT=42 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:43 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=20292 PROTO=TCP SPT=40627 DPT=43 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:44 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=46175 PROTO=TCP SPT=35227 DPT=44 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:44 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=10175 PROTO=TCP SPT=46154 DPT=45 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:44 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=55178 PROTO=TCP SPT=52226 DPT=46 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:44 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=29087 PROTO=TCP SPT=33837 DPT=47 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:45 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=28881 PROTO=TCP SPT=55933 DPT=48 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:16:45 server kernel: [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:08:00 SRC=198.51.100.42 DST=192.168.1.150 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=56070 PROTO=TCP SPT=60935 DPT=49 WINDOW=1024 RES=0x00 SYN URGP=0
+Jul 20 12:17:19 server sshd[9668]: Accepted password for john from 192.168.1.50 port 40416 ssh2
+Jul 20 12:18:04 server sshd[7482]: Accepted password for john from 10.0.0.16 port 59110 ssh2
+Jul 20 12:18:43 server sshd[9704]: Accepted password for john from 192.168.1.51 port 37650 ssh2
+Jul 20 12:18:52 server sshd[11079]: Accepted password for bob from 192.168.1.50 port 58740 ssh2
+Jul 20 12:19:49 server sshd[5074]: Accepted password for charlie from 10.0.0.16 port 47158 ssh2
+Jul 20 12:20:13 server sshd[17399]: Accepted password for dev_user from 172.16.0.4 port 41688 ssh2
+Jul 20 12:20:46 server sshd[15156]: Accepted password for sysadmin from 192.168.1.50 port 34074 ssh2
+Jul 20 12:21:29 server sshd[8501]: Failed password for alice from 192.168.1.102 port 35760 ssh2
+Jul 20 12:22:10 server sshd[23029]: Accepted password for alice from 10.0.0.16 port 57827 ssh2
+Jul 20 12:22:51 server sshd[6740]: Accepted password for emily from 192.168.1.50 port 57549 ssh2
+Jul 20 12:23:37 server sshd[20180]: Accepted password for charlie from 10.0.0.15 port 38715 ssh2
+Jul 20 12:24:34 server sshd[12401]: Accepted password for alice from 10.0.0.15 port 48169 ssh2
+Jul 20 12:24:59 server sshd[6269]: Accepted password for alice from 172.16.0.4 port 60874 ssh2
+Jul 20 12:25:48 server sshd[14122]: Accepted password for charlie from 10.0.0.15 port 54479 ssh2
+Jul 20 12:26:28 server sshd[11306]: Accepted password for dev_user from 192.168.1.50 port 35653 ssh2
+Jul 20 12:26:40 server sshd[28031]: Failed password for dev_user from 172.16.0.5 port 49630 ssh2
+Jul 20 12:27:19 server sshd[7146]: Accepted password for dev_user from 10.0.0.15 port 34544 ssh2
+Jul 20 12:28:03 server sshd[15484]: Accepted password for dev_user from 172.16.0.5 port 53261 ssh2
+Jul 20 12:28:21 server sshd[10438]: Accepted password for sysadmin from 192.168.1.102 port 37061 ssh2
+Jul 20 12:29:10 server sshd[21644]: Accepted password for alice from 10.0.0.15 port 33713 ssh2
+Jul 20 12:29:30 server sshd[19049]: Accepted password for bob from 172.16.0.4 port 42950 ssh2
+Jul 20 12:30:01 server sshd[4717]: Accepted password for bob from 192.168.1.50 port 60339 ssh2
+Jul 20 12:30:13 server sshd[17330]: Accepted password for emily from 172.16.0.4 port 37813 ssh2
+Jul 20 12:30:36 server sshd[14614]: Accepted password for john from 10.0.0.16 port 41727 ssh2
+Jul 20 12:31:11 server sshd[5739]: Accepted password for dev_user from 192.168.1.51 port 50831 ssh2
+Jul 20 12:31:54 server sshd[29312]: Accepted password for john from 10.0.0.16 port 37241 ssh2
+Jul 20 12:32:48 server sshd[12137]: Accepted password for emily from 172.16.0.5 port 46364 ssh2
+Jul 20 12:33:25 server sshd[10268]: Accepted password for emily from 192.168.1.102 port 32852 ssh2
+Jul 20 12:34:23 server sshd[17044]: Accepted password for sysadmin from 10.0.0.16 port 54392 ssh2
+Jul 20 12:34:56 server sshd[11893]: Accepted password for dev_user from 10.0.0.16 port 44077 ssh2
+Jul 20 12:35:35 server sshd[29495]: Accepted password for dev_user from 10.0.0.15 port 43312 ssh2
+Jul 20 12:36:24 server sshd[8653]: Accepted password for sysadmin from 192.168.1.51 port 45317 ssh2
+Jul 20 12:36:55 server sshd[16498]: Accepted password for charlie from 192.168.1.50 port 57170 ssh2
+Jul 20 12:37:51 server sshd[26965]: Accepted password for dev_user from 10.0.0.15 port 54515 ssh2
+Jul 20 12:38:05 server sshd[17459]: Failed password for alice from 10.0.0.15 port 36904 ssh2
+Jul 20 12:38:06 server sshd[17459]: Connection closed by authenticating user alice 10.0.0.15 port 36904 [preauth]
+Jul 20 12:39:06 server sshd[18234]: Accepted password for dev_user from 172.16.0.5 port 36035 ssh2
+Jul 20 12:39:11 server sshd[29538]: Accepted password for bob from 172.16.0.4 port 46202 ssh2
+Jul 20 12:39:25 server sshd[9684]: Accepted password for dev_user from 192.168.1.50 port 58377 ssh2
+Jul 20 12:40:14 server sshd[28910]: Accepted password for john from 10.0.0.15 port 35399 ssh2
+Jul 20 12:41:02 server sshd[11376]: Accepted password for sysadmin from 172.16.0.5 port 45220 ssh2
+Jul 20 12:41:55 server sshd[2176]: Accepted password for emily from 10.0.0.15 port 50496 ssh2
+Jul 20 12:42:15 server sshd[8454]: Accepted password for john from 172.16.0.4 port 42184 ssh2
+Jul 20 12:42:47 server sshd[24065]: Accepted password for emily from 192.168.1.50 port 53534 ssh2
+Jul 20 12:43:20 server sshd[1948]: Accepted password for john from 192.168.1.51 port 42580 ssh2
+Jul 20 12:44:15 server sshd[13282]: Accepted password for charlie from 192.168.1.50 port 44514 ssh2
+Jul 20 12:44:35 server sshd[23341]: Accepted password for dev_user from 10.0.0.16 port 51312 ssh2
+Jul 20 12:44:50 server sshd[29535]: Accepted password for alice from 192.168.1.51 port 52739 ssh2
+Jul 20 12:45:38 server sshd[5689]: Accepted password for dev_user from 192.168.1.51 port 51876 ssh2
+Jul 20 12:46:23 server sshd[22851]: Accepted password for dev_user from 192.168.1.102 port 41134 ssh2
+Jul 20 12:47:19 server sshd[18910]: Accepted password for charlie from 10.0.0.15 port 54971 ssh2
