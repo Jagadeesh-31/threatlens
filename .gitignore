@@ -7,6 +7,7 @@ __pycache__/
 
 # Local SQLite databases
 *.db
+data/geoip_cache.json
 
 # OS / Editor specific
 .DS_Store

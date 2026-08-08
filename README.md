@@ -1,104 +1,74 @@
-# ThreatLens 🔍
+# ThreatLens 🔎
 
-ThreatLens is a lightweight, local Security Operations Center (SOC) Log Parser, Detection Engine, and Interactive Dashboard. It parses raw system logs (such as SSH auth logs and Web server access logs), detects malicious activities based on pre-defined heuristics mapped to the MITRE ATT&CK framework, stores alerts in a local SQLite database, and visualizes them on a rich Streamlit dashboard.
+A lightweight SIEM-style log analysis and alerting dashboard that ingests Linux/web server logs, detects attack patterns using MITRE ATT&CK-mapped rules, and visualizes threats in real time — built to mirror real SOC Tier-1 triage workflows.
 
----
+## Problem Statement
+SOC analysts spend a large portion of their time manually triaging raw log data to spot brute-force attempts, scans, and privilege escalation. ThreatLens automates the first pass: parsing logs, applying rule-based detections mapped to industry-standard MITRE ATT&CK techniques, scoring severity, and surfacing everything on a single dashboard — reducing time-to-detection and giving analysts a starting point for deeper investigation.
 
-## 📂 Project Structure
+## Features
+- Synthetic log generator for reproducible demo data (no real attack data needed)
+- Regex-based parser for SSH auth logs, sudo logs, UFW firewall logs, and web access logs
+- Rule-based detection engine, each rule mapped to a MITRE ATT&CK technique
+- Severity-scored alerts (Low / Medium / High) stored in SQLite with de-duplication
+- Interactive Streamlit dashboard: filterable alert table, time-series and breakdown charts
+- GeoIP-based attacker location map
+- Slack/Discord webhook notifications on High-severity alerts
+- One-click "Replay Attack" demo control
 
-```text
-threatlens/
-├── data/                  # Sample & synthetic raw logs
-├── src/                   # Core Python detection pipeline
-│   ├── parser.py          # Log regex parsing and structuring
-│   ├── detectors.py       # Detection rule engine (MITRE ATT&CK mapping)
-│   ├── generator.py       # Synthetic log generation script
-│   └── db.py              # SQLite storage layer for alerts
-├── dashboard/             # Front-end UI
-│   └── app.py             # Streamlit visualization & alert manager
-├── requirements.txt       # Project dependencies
-└── README.md              # Project documentation (this file)
+## Architecture
+
+```mermaid
+flowchart LR
+    A[Raw Logs<br/>auth.log / access.log] --> B[generator.py<br/>Synthetic log injection]
+    B --> C[parser.py<br/>Regex → structured DataFrame]
+    C --> D[detectors.py<br/>MITRE ATT&CK rule engine]
+    D --> E[(SQLite<br/>alerts table)]
+    E --> F[Streamlit Dashboard<br/>filters + charts + map]
+    D --> G[alerter.py<br/>Slack/Discord webhook]
+    E --> H[geoip.py<br/>IP → lat/lon enrichment]
+    H --> F
 ```
 
----
-
-## 🛠️ Technology Stack
-
-- **Core**: Python 3.10+
-- **Log Processing**: `pandas`
-- **Data Visualizations**: `plotly`
-- **Interactive UI**: `streamlit`
-- **Mock Log Generation**: `faker`
-- **Storage Layer**: SQLite (`sqlite3` standard library)
-
----
-
-## 📊 MITRE ATT&CK Detections Mapping
-
-| Threat / Scenario | MITRE ATT&CK Technique | Severity | Detector Function |
+## MITRE ATT&CK Mapping
+| Detection | Logic | Technique | ID |
 |---|---|---|---|
-| SSH Brute Force | Brute Force (T1110) | High | `detect_bruteforce` |
-| Network Port Scan | Active Scanning (T1595) | Medium | `detect_portscan` |
-| Privilege Escalation | Abuse of Privilege (T1548) | High | `detect_priv_escalation` |
-| Off-hours Admin Logins | Valid Accounts (T1078) | Low | `detect_offhours_login` |
+| Brute-force login | ≥5 failed logins from 1 IP in 60s | Brute Force | T1110 |
+| Port scan | ≥10 distinct ports from 1 IP in 60s | Network Service Discovery | T1046 |
+| Privilege escalation | ≥3 failed sudo attempts by 1 user | Abuse Elevation Control Mechanism | T1548 |
+| Off-hours login | Successful login outside 08:00–20:00 | Valid Accounts | T1078 |
 
----
+## Tech Stack
+Python · pandas · Streamlit · Plotly/native charts · SQLite · Faker · ip-api.com
 
-## 🚀 Getting Started
-
-### 1. Set Up Virtual Environment
-
-Open your terminal, navigate to the `threatlens` directory, and run:
-
-**Windows:**
-```powershell
-python -m venv venv
-.\venv\Scripts\activate
-```
-
-**Mac/Linux:**
+## Setup
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### 2. Install Dependencies
-
-```bash
+git clone https://github.com/<your-username>/threatlens.git
+cd threatlens
 pip install -r requirements.txt
-```
 
-### 3. Generate Sample Logs (Day 2 onwards)
-```bash
-python src/generator.py
-```
+# optional: enable Slack/Discord alerts
+export THREATLENS_WEBHOOK_URL="your-webhook-url"
+export THREATLENS_WEBHOOK_TYPE="slack"   # or "discord"
 
-### 4. Run Pipeline (Day 6 onwards)
-```bash
-python src/run_pipeline.py
-```
-
-### 5. Launch Dashboard (Day 8 onwards)
-```bash
+python src/generator.py      # generate synthetic logs
+python run_pipeline.py       # parse + detect + store alerts
 streamlit run dashboard/app.py
 ```
 
----
+## Screenshots
 
-## 📅 Roadmap (2-Week Plan)
+_(Add 2-3 screenshots or a GIF here: dashboard overview, alert table with color-coded severity, attacker map)_
 
-### Week 1: Foundation + Detection Engine
-- **Day 1**: Setup, planning, dependencies, folder structure & README skeleton (Current).
-- **Day 2**: Synthetic log generator (SSH & Web Server) simulating normal and malicious scenarios.
-- **Day 3**: Log parser (regex-based parsing into structured Pandas DataFrames).
-- **Day 4-5**: Detection Engine implementing standard detection heuristics.
-- **Day 6**: Storage layer (SQLite integration) and full pipeline execution script.
-- **Day 7**: Buffer, end-to-end integration, bug fixing, and repository polish.
+## Design Decisions
+- **Sliding time-window detection** for brute-force/port-scan rules avoids both missed slow-burn attacks and alert-spam on every single event in a burst.
+- **SQLite with UNIQUE constraints** prevents duplicate alerts on repeated pipeline runs over the same data — mirrors how real SIEM ingestion handles replayed/overlapping log sources.
+- **Synthetic data generator** ensures the project is always demoable without depending on access to real attack traffic.
 
-### Week 2: Dashboard + Polish
-- **Day 8-9**: Streamlit Dashboard (Core metrics, tables, and filtering).
-- **Day 10**: Rich visual charts (Plotly time-series, bar chart, and donut).
-- **Day 11**: Slack/Discord Alert Webhook notification integration.
-- **Day 12**: Interactive "Replay Attack" trigger and styling refinement.
-- **Day 13**: Final documentation and video demonstration recording.
-- **Day 14**: Publishing, repository pinning, and project release.
+## Future Improvements
+- Real-time log tailing instead of batch file processing
+- ML-based anomaly detection layered on top of rule-based detections
+- Multi-source log correlation (auth + access + firewall in one unified alert)
+- User authentication on the dashboard for multi-analyst use
+
+## Author
+[Your Name] — [LinkedIn] — [GitHub]
