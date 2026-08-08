@@ -129,9 +129,9 @@ def alerts_endpoint(
 @app.api_route("/index.py", methods=["GET", "POST"], response_class=HTMLResponse)
 def dashboard_ui(request: Request):
     path = str(request.url.path)
-    if "pipeline" in path or "run" in path:
+    params = request.query_params
+    if params.get("replay") == "1" or params.get("action") == "replay" or "pipeline" in path or "run" in path:
         run_synthetic_pipeline()
-        return JSONResponse({"status": "success", "message": "Replayed attack traffic."})
 
     ensure_data_populated()
     stats = get_summary_stats()
@@ -720,22 +720,10 @@ def dashboard_ui(request: Request):
       }}
     }}
 
-    async function replayAttack() {{
+    function replayAttack() {{
       const btn = document.querySelector('.btn-replay');
       btn.innerText = '⌛ Generating & Replaying Attack...';
-      try {{
-        let res = await fetch('/api/pipeline/run', {{ method: 'POST' }});
-        if (!res.ok) {{
-          res = await fetch('/pipeline/run', {{ method: 'POST' }});
-        }}
-        if (!res.ok) {{
-          res = await fetch('/api/pipeline/run', {{ method: 'GET' }});
-        }}
-        window.location.reload();
-      }} catch (e) {{
-        btn.innerText = '🔁 Regenerate Logs & Replay Attack';
-        alert('Failed to trigger pipeline replay.');
-      }}
+      window.location.href = '/?replay=1';
     }}
   </script>
 </body>
