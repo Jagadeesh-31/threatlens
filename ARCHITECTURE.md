@@ -101,15 +101,11 @@ flowchart TB
 Order of operations for one end-to-end execution.
 
 ```mermaid
-flowchart TB
-```
-
-```mermaid
 sequenceDiagram
     participant U as User
     participant Gen as generator.py
     participant Pipe as run_pipeline.py
-    participant Par as parser.py
+    participant Prs as parser.py
     participant Det as detectors.py
     participant DB as SQLite
     participant Alt as alerter.py
@@ -118,8 +114,8 @@ sequenceDiagram
     U->>Gen: python src/generator.py
     Gen->>Gen: Write sample_auth.log / sample_access.log
     U->>Pipe: python run_pipeline.py
-    Pipe->>Par: parse_log_file()
-    Par-->>Pipe: structured DataFrame
+    Pipe->>Prs: parse_log_file()
+    Prs-->>Pipe: structured DataFrame
     Pipe->>Det: run_all_detectors(df)
     Det-->>Pipe: list of alert dicts (MITRE-tagged)
     Pipe->>DB: insert_alerts()
