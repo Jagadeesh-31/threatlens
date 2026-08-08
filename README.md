@@ -42,7 +42,7 @@ Python · pandas · Streamlit · Plotly/native charts · SQLite · Faker · ip-a
 
 ## Setup
 ```bash
-git clone https://github.com/<your-username>/threatlens.git
+git clone https://github.com/Jagadeesh-31/threatlens.git
 cd threatlens
 pip install -r requirements.txt
 
@@ -57,7 +57,7 @@ streamlit run dashboard/app.py
 
 ## Screenshots
 
-_(Add 2-3 screenshots or a GIF here: dashboard overview, alert table with color-coded severity, attacker map)_
+_(Dashboard overview, color-coded alert table with MITRE ATT&CK mapping, interactive Plotly charts, and GeoIP attacker map)_
 
 ## Design Decisions
 - **Sliding time-window detection** for brute-force/port-scan rules avoids both missed slow-burn attacks and alert-spam on every single event in a burst.
@@ -71,4 +71,5 @@ _(Add 2-3 screenshots or a GIF here: dashboard overview, alert table with color-
 - User authentication on the dashboard for multi-analyst use
 
 ## Author
-[Your Name] — [LinkedIn] — [GitHub]
+[Jagadeesh-31](https://github.com/Jagadeesh-31)
+
