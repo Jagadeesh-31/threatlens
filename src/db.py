@@ -5,17 +5,33 @@ Handles creating the alerts table, inserting new alerts
 (with de-duplication), and querying alerts for the dashboard.
 """
 
+import os
+import shutil
 import sqlite3
 import math
 from pathlib import Path
 from datetime import datetime
 
-DB_PATH = Path(__file__).resolve().parent.parent / "data" / "threatlens.db"
+DEFAULT_DB = Path(__file__).resolve().parent.parent / "data" / "threatlens.db"
+
+
+def get_db_path() -> Path:
+    """Return DB path, copying to /tmp if in Vercel or read-only environment."""
+    if os.environ.get("VERCEL") or not os.access(DEFAULT_DB.parent, os.W_OK):
+        tmp_db = Path("/tmp/threatlens.db")
+        if not tmp_db.exists() and DEFAULT_DB.exists():
+            try:
+                os.makedirs("/tmp", exist_ok=True)
+                shutil.copy(DEFAULT_DB, tmp_db)
+            except Exception:
+                pass
+        return tmp_db
+    return DEFAULT_DB
 
 
 def get_connection() -> sqlite3.Connection:
     """Return a connection to the ThreatLens SQLite database."""
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect(get_db_path())
     conn.row_factory = sqlite3.Row
     return conn
 
@@ -40,7 +56,7 @@ def init_db() -> None:
     """)
     conn.commit()
     conn.close()
-    print(f"[+] Database ready at {DB_PATH}")
+    print(f"[+] Database ready at {get_db_path()}")
 
 
 def insert_alerts(alerts: list[dict]) -> int:
