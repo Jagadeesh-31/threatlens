@@ -43,9 +43,16 @@ def ensure_data_populated():
 
 def run_synthetic_pipeline():
     """Generate fresh synthetic logs, run detectors, and insert alerts."""
-    base_time = datetime.now() - timedelta(hours=2)
-    auth_lines = build_auth_log(base_time, 50)
-    access_lines = build_access_log(base_time, 150)
+    import random
+    clear_all_alerts()
+
+    offset_minutes = random.randint(15, 180)
+    base_time = datetime.now() - timedelta(minutes=offset_minutes)
+    num_auth = random.randint(35, 65)
+    num_access = random.randint(100, 200)
+
+    auth_lines = build_auth_log(base_time, num_auth)
+    access_lines = build_access_log(base_time, num_access)
 
     tmp_dir = Path("/tmp") if (os.environ.get("VERCEL") or not os.access(ROOT_DIR / "data", os.W_OK)) else (ROOT_DIR / "data")
     os.makedirs(tmp_dir, exist_ok=True)

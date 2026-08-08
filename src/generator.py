@@ -20,7 +20,15 @@ NORMAL_IPS = [
     "172.16.0.5"
 ]
 
-ATTACKER_IP = "198.51.100.42"
+ATTACKER_IPS = [
+    "198.51.100.42",
+    "203.0.113.45",
+    "198.51.100.89",
+    "185.220.101.5",
+    "45.33.32.156",
+    "198.51.100.23"
+]
+
 SERVER_IP = "192.168.1.150"
 
 USERNAMES = [
@@ -30,10 +38,10 @@ USERNAMES = [
     "dev_user",
     "sysadmin",
     "john",
-    "emily"
+    "emily",
+    "root",
+    "admin"
 ]
-
-TARGET_USERNAME = "root"
 
 def format_syslog_timestamp(dt: datetime.datetime) -> str:
     """
@@ -78,15 +86,16 @@ def generate_normal_auth_traffic(start_time: datetime.datetime, count: int):
 
 def generate_bruteforce_attack(start_time: datetime.datetime):
     """
-    Generates brute-force SSH password failures targeting 'root' from the attacker IP.
+    Generates brute-force SSH password failures targeting 'root' or 'admin' from a random attacker IP.
     """
     logs = []
     current_time = start_time
-    ip = ATTACKER_IP
-    user = TARGET_USERNAME
+    ip = random.choice(ATTACKER_IPS)
+    user = random.choice(["root", "admin", "sysadmin"])
     
-    # Rapid pace (1-4 seconds spacing) with ~15 attempts
-    for _ in range(15):
+    # Rapid pace (1-4 seconds spacing) with random number of attempts (12-25)
+    attempts = random.randint(12, 25)
+    for _ in range(attempts):
         current_time += datetime.timedelta(seconds=random.randint(1, 4))
         port = random.randint(32768, 61000)
         pid = random.randint(1000, 30000)
@@ -125,11 +134,11 @@ def generate_sudo_failures(start_time: datetime.datetime):
 
 def generate_port_scan(start_time: datetime.datetime):
     """
-    Generates sequential UFW block log lines from the attacker IP hitting various ports rapidly.
+    Generates sequential UFW block log lines from a random attacker IP hitting various ports rapidly.
     """
     logs = []
     current_time = start_time
-    ip = ATTACKER_IP
+    ip = random.choice(ATTACKER_IPS)
     
     # Scan a range of 30 ports rapidly (100 to 500 milliseconds spacing)
     scanned_ports = list(range(20, 50))
