@@ -126,8 +126,14 @@ display_df = filtered[[
     "src_ip", "user", "description"
 ]].sort_values("timestamp", ascending=False)
 
+styler = display_df.style
+if hasattr(styler, "map"):
+    styler = styler.map(severity_color, subset=["severity"])
+else:
+    styler = styler.applymap(severity_color, subset=["severity"])
+
 st.dataframe(
-    display_df.style.applymap(severity_color, subset=["severity"]),
+    styler,
     use_container_width=True,
     height=350,
 )
