@@ -17,6 +17,8 @@ SOC analysts spend a large portion of their time manually triaging raw log data 
 
 ## Architecture
 
+For in-depth architectural diagrams, data flows, module structure, sequence diagrams, and interview quick-references, see [ARCHITECTURE.md](ARCHITECTURE.md).
+
 ```mermaid
 flowchart LR
     A[Raw Logs<br/>auth.log / access.log] --> B[generator.py<br/>Synthetic log injection]
