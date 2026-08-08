@@ -81,6 +81,8 @@ def health_check():
 
 @app.api_route("/api/pipeline/run", methods=["GET", "POST"])
 @app.api_route("/pipeline/run", methods=["GET", "POST"])
+@app.api_route("/api/index.py/api/pipeline/run", methods=["GET", "POST"])
+@app.api_route("/api/index.py/pipeline/run", methods=["GET", "POST"])
 def replay_attack_endpoint():
     """Replay attack demo control — generates fresh logs and populates DB."""
     try:
@@ -120,12 +122,17 @@ def alerts_endpoint(
         return JSONResponse({"error": str(e)}, status_code=500)
 
 
-@app.get("/", response_class=HTMLResponse)
-@app.get("/api", response_class=HTMLResponse)
-@app.get("/api/index", response_class=HTMLResponse)
-@app.get("/api/index.py", response_class=HTMLResponse)
-@app.get("/index.py", response_class=HTMLResponse)
-def dashboard_ui():
+@app.api_route("/", methods=["GET", "POST"], response_class=HTMLResponse)
+@app.api_route("/api", methods=["GET", "POST"], response_class=HTMLResponse)
+@app.api_route("/api/index", methods=["GET", "POST"], response_class=HTMLResponse)
+@app.api_route("/api/index.py", methods=["GET", "POST"], response_class=HTMLResponse)
+@app.api_route("/index.py", methods=["GET", "POST"], response_class=HTMLResponse)
+def dashboard_ui(request: Request):
+    path = str(request.url.path)
+    if "pipeline" in path or "run" in path:
+        run_synthetic_pipeline()
+        return JSONResponse({"status": "success", "message": "Replayed attack traffic."})
+
     ensure_data_populated()
     stats = get_summary_stats()
     alerts = query_alerts(limit=500)
@@ -717,7 +724,13 @@ def dashboard_ui():
       const btn = document.querySelector('.btn-replay');
       btn.innerText = '⌛ Generating & Replaying Attack...';
       try {{
-        await fetch('/api/pipeline/run', {{ method: 'POST' }});
+        let res = await fetch('/api/pipeline/run', {{ method: 'POST' }});
+        if (!res.ok) {{
+          res = await fetch('/pipeline/run', {{ method: 'POST' }});
+        }}
+        if (!res.ok) {{
+          res = await fetch('/api/pipeline/run', {{ method: 'GET' }});
+        }}
         window.location.reload();
       }} catch (e) {{
         btn.innerText = '🔁 Regenerate Logs & Replay Attack';
