@@ -664,12 +664,20 @@ def dashboard_ui(request: Request):
       }}
     }});
 
-    // Leaflet Dark GeoIP Map Initialization
-    const map = L.map('map').setView([30, 10], 2);
+    // Leaflet Dark GeoIP Map Initialization (Single World View - No Duplicate Wraps)
+    const map = L.map('map', {{
+      minZoom: 2,
+      maxZoom: 18,
+      maxBounds: [[-85, -180], [85, 180]],
+      maxBoundsViscosity: 1.0
+    }}).setView([25, 10], 2);
+
     L.tileLayer('https://{{s}}.basemaps.cartocdn.com/dark_all/{{z}}/{{x}}/{{y}}{{r}}.png', {{
       attribution: '&copy; OpenStreetMap &copy; CARTO',
       subdomains: 'abcd',
-      maxZoom: 19
+      maxZoom: 19,
+      noWrap: true,
+      bounds: [[-85, -180], [85, 180]]
     }}).addTo(map);
 
     geoMarkers.forEach(m => {{
