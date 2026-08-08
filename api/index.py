@@ -32,10 +32,13 @@ def startup_event():
         print(f"Startup DB init warning: {e}")
 
 @app.get("/api/health")
+@app.get("/health")
 def health_check():
     return {"status": "ok", "app": "ThreatLens SIEM"}
 
+
 @app.get("/api/stats")
+@app.get("/stats")
 def stats_endpoint():
     try:
         stats = get_summary_stats()
@@ -43,7 +46,9 @@ def stats_endpoint():
     except Exception as e:
         return JSONResponse({"error": str(e)}, status_code=500)
 
+
 @app.get("/api/alerts")
+@app.get("/alerts")
 def alerts_endpoint(
     severity: Optional[str] = Query(None),
     technique_id: Optional[str] = Query(None),
@@ -56,7 +61,12 @@ def alerts_endpoint(
     except Exception as e:
         return JSONResponse({"error": str(e)}, status_code=500)
 
+
 @app.get("/", response_class=HTMLResponse)
+@app.get("/api", response_class=HTMLResponse)
+@app.get("/api/index", response_class=HTMLResponse)
+@app.get("/api/index.py", response_class=HTMLResponse)
+@app.get("/index.py", response_class=HTMLResponse)
 def dashboard_ui():
     html_content = """<!DOCTYPE html>
 <html lang="en">

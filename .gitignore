@@ -13,3 +13,5 @@ data/geoip_cache.json
 .DS_Store
 .vscode/
 .idea/
+
+.vercel
