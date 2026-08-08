@@ -9,19 +9,42 @@ map visualization. Results are cached to avoid repeat lookups.
 import requests
 import time
 import json
+import os
+import shutil
 from pathlib import Path
 
-CACHE_PATH = Path(__file__).resolve().parent.parent / "data" / "geoip_cache.json"
+DEFAULT_CACHE_PATH = Path(__file__).resolve().parent.parent / "data" / "geoip_cache.json"
+
+
+def _get_cache_path() -> Path:
+    if os.environ.get("VERCEL") or not os.access(DEFAULT_CACHE_PATH.parent, os.W_OK):
+        tmp_cache = Path("/tmp/geoip_cache.json")
+        if not tmp_cache.exists() and DEFAULT_CACHE_PATH.exists():
+            try:
+                os.makedirs("/tmp", exist_ok=True)
+                shutil.copy(DEFAULT_CACHE_PATH, tmp_cache)
+            except Exception:
+                pass
+        return tmp_cache
+    return DEFAULT_CACHE_PATH
 
 
 def _load_cache() -> dict:
-    if CACHE_PATH.exists():
-        return json.loads(CACHE_PATH.read_text())
+    cache_path = _get_cache_path()
+    if cache_path.exists():
+        try:
+            return json.loads(cache_path.read_text())
+        except Exception:
+            pass
     return {}
 
 
 def _save_cache(cache: dict) -> None:
-    CACHE_PATH.write_text(json.dumps(cache, indent=2))
+    try:
+        cache_path = _get_cache_path()
+        cache_path.write_text(json.dumps(cache, indent=2))
+    except Exception:
+        pass
 
 
 def lookup_ip(ip: str, cache: dict = None) -> dict | None:
